@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>https://sts.windows.net/305675df-dc39-4b66-8034-b8e7a8cb798c/</issuer>
+    <loginUrl>https://login.microsoftonline.com/305675df-dc39-4b66-8034-b8e7a8cb798c/saml2</loginUrl>
+    <logoutUrl>https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0</logoutUrl>
+    <name>AzureSSO</name>
+    <oauthTokenEndpoint>https://acercomputeraustralia.my.salesforce.com/services/oauth2/token?so=00D7F000006jZUF</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P17F00000AARYT</requestSigningCertId>
+    <salesforceLoginUrl>https://acercomputeraustralia.my.salesforce.com?so=00D7F000006jZUF</salesforceLoginUrl>
+    <samlEntityId>https://acercomputeraustralia.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQVj7qUcL6dYxE6j/JJNw+7TANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0xODA2MjcwOTMwNDFaFw0yMTA2MjcwOTMwNDBaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAztW/5jZa+nVF5uBllnBiK9sR/Oqybyf3hjGuXSlNVzHQyDtT9DJy5H466yga0E8IHliywlJW2BJ8R74vRPPUl7YvU8LkQEs9dBHGBVWzfyoSqcLF2goFwRH9EK1+f9ynlz/b50J3jYdRuPegDFDa7Vt7uZTvaUPRFhjiXvCh0Z0V3ZZNqpK8ZhZdv91pOT1tnMwYLBFSN4IWJTRELxIPfCPW45BLq3aBYBaK/DDztEMVy9G6Bl2uPeSSHvlG7gd06268mJGCavGP+DaBUpsWR53uSEZIkCQinrFpRodscCPKI0fFIEkbtmKPJp7TvixSBoNCxQIFcTar7mp1y90VCwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDIjuuxAH5y+JP5kD23IUYMMj0HwrLwe2HxuHkRIjKdS5f5R7qP2N7RhIMlez0TGGebhKkwZJ5NU6dvdt782+AhUiraeMoj8YDpi+IAr12i3Ouoy1iQZXH/pQxJ9oibI4+iVdrPwf7YCWt9dGi2eUS7Iw5xj5XPYIgV+sDOJzkfQBdwXtMC3Dgm8vqjL2FWHIpa7B/qTYN/PYsddokLn8XktiFRW2bgRLw9cQdACYPaU3VPc6uUD78nUA7s8BHjpzV4RW3tvkD4i7ltm+dKp/NwDLZC652Hq+GyWdkk29UTywSc3i9gKM2Iq1CmTWjl8a3LHtYlTTJzoYElX32X5rMB</validationCert>
+</SamlSsoConfig>
