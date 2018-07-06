@@ -2,8 +2,15 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>40.0</version>
     <types>
+        <members>ContactDAO</members>
+        <members>ContactTriggerHandler</members>
+        <members>ContactTriggerHandlerTest</members>
         <members>LocationTriggerHandler</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ContactTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Salesforce1</members>
@@ -35,8 +42,10 @@
     </types>
     <types>
         <members>Account.Account_Compact_Layout</members>
+        <members>Contact.QuickStartLayout</members>
         <members>Lead.Leads_Custom_Compact_Layout</members>
         <members>Opportunity.New_Awesome_Companct_Layout</members>
+        <members>Task.BDM_compact_layout</members>
         <name>CompactLayout</name>
     </types>
     <types>
@@ -60,11 +69,13 @@
         <members>Account.AnnualRevenue</members>
         <members>Account.BillingAddress</members>
         <members>Account.Description</members>
+        <members>Account.Email__c</members>
         <members>Account.Fax</members>
         <members>Account.Industry</members>
         <members>Account.Jigsaw</members>
         <members>Account.MFG_ID__c</members>
         <members>Account.Name</members>
+        <members>Account.No_Of_Seats__c</members>
         <members>Account.NumberOfEmployees</members>
         <members>Account.OwnerId</members>
         <members>Account.Ownership</members>
@@ -75,10 +86,13 @@
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
         <members>Account.Site</members>
+        <members>Account.Sub_Segment__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Type</members>
         <members>Account.Website</members>
         <members>AccountContactRole.Role</members>
+        <members>Activity.Account__c</members>
+        <members>Activity.Opportunity__c</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
         <members>Asset.AssetProvidedById</members>
@@ -207,11 +221,13 @@
         <members>Contact.HasOptedOutOfEmail</members>
         <members>Contact.HasOptedOutOfFax</members>
         <members>Contact.HomePhone</members>
+        <members>Contact.Is_Decision_Maker__c</members>
         <members>Contact.Jigsaw</members>
         <members>Contact.LastCURequestDate</members>
         <members>Contact.LastCUUpdateDate</members>
         <members>Contact.LeadSource</members>
         <members>Contact.MailingAddress</members>
+        <members>Contact.Main_Contact__c</members>
         <members>Contact.MobilePhone</members>
         <members>Contact.Name</members>
         <members>Contact.OtherAddress</members>
@@ -300,6 +316,9 @@
         <members>ForecastingQuota.ProductFamily</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
+        <members>Issue_Notes__c.Account__c</members>
+        <members>Issue_Notes__c.Issue_Notes__c</members>
+        <members>Issue_Notes__c.Issue_Type__c</members>
         <members>Lead.Address</members>
         <members>Lead.AnnualRevenue</members>
         <members>Lead.CampaignId</members>
@@ -342,14 +361,22 @@
         <members>Opportunity.IsPrivate</members>
         <members>Opportunity.LeadSource</members>
         <members>Opportunity.Loss_Reason__c</members>
+        <members>Opportunity.Lost_Reason__c</members>
         <members>Opportunity.Name</members>
         <members>Opportunity.NextStep</members>
+        <members>Opportunity.Next_Meeting_date__c</members>
+        <members>Opportunity.Next_Step__c</members>
+        <members>Opportunity.Obstacle_Detail__c</members>
+        <members>Opportunity.Obstacle__c</members>
+        <members>Opportunity.On_hold__c</members>
         <members>Opportunity.OwnerId</members>
         <members>Opportunity.Pricebook2Id</members>
         <members>Opportunity.Probability</members>
         <members>Opportunity.ROI_Analysis_Completed__c</members>
+        <members>Opportunity.Reason__c</members>
         <members>Opportunity.StageName</members>
         <members>Opportunity.SyncedQuoteId</members>
+        <members>Opportunity.Target_Ship_date__c</members>
         <members>Opportunity.TotalOpportunityQuantity</members>
         <members>Opportunity.Type</members>
         <members>OpportunityCompetitor.CompetitorName</members>
@@ -669,6 +696,7 @@
         <members>ForecastingQuota</members>
         <members>ForecastingTypeToCategory</members>
         <members>Idea</members>
+        <members>Issue_Notes__c</members>
         <members>Lead</members>
         <members>Macro</members>
         <members>MacroAction</members>
@@ -709,6 +737,10 @@
         <members>WorkBadgeDefinition</members>
         <members>WorkThanks</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Issue_Notes__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>Sales_and_Marketing_Dashboards</members>
@@ -761,9 +793,24 @@
         <name>EmailTemplate</name>
     </types>
     <types>
+        <members>Account_Record_Page</members>
+        <members>BDM_Home_Page</members>
+        <members>Contact_Record_Page</members>
+        <members>Issue_Notes</members>
+        <members>Issue_Notes_Record_Page</members>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
+        <members>Opportunity_Record_Page</members>
+        <members>Task_Record_Page</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Create_Followup_task_for_BDM-7</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Create_Followup_task_for_BDM</members>
+        <name>FlowDefinition</name>
     </types>
     <types>
         <members>Dashboard Home Page Default</members>
@@ -793,6 +840,7 @@
         <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
         <members>Idea-Idea Layout</members>
+        <members>Issue_Notes__c-Issue Notes Layout</members>
         <members>Lead-Lead Layout</members>
         <members>Macro-Macro Layout</members>
         <members>Opportunity-Opportunity Layout</members>
@@ -842,6 +890,7 @@
         <members>Case.MyOpenCases</members>
         <members>CollaborationGroup.All_ChatterGroups</members>
         <members>Contact.AllContacts</members>
+        <members>Contact.All_Contacts_alongwith_Main_Contact</members>
         <members>Contact.MyContacts</members>
         <members>Contract.AllActivatedContracts</members>
         <members>Contract.AllContracts</members>
@@ -851,6 +900,7 @@
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
         <members>Idea.Ideas_Last_7_Days</members>
+        <members>Issue_Notes__c.All</members>
         <members>Lead.AllOpenLeads</members>
         <members>Lead.MyUnreadLeads</members>
         <members>Lead.TodaysLeads</members>
@@ -886,6 +936,7 @@
     <types>
         <members>Acer</members>
         <members>Admin</members>
+        <members>BDM</members>
         <members>Chatter External User</members>
         <members>Chatter Free User</members>
         <members>Chatter Moderator User</members>
@@ -893,6 +944,7 @@
         <members>Guest License User</members>
         <members>MarketingProfile</members>
         <members>ReadOnly</members>
+        <members>Segment Manager</members>
         <members>SolutionManager</members>
         <members>Standard</members>
         <name>Profile</name>
@@ -1174,6 +1226,20 @@
         <members>TaskSubject</members>
         <members>TaskType</members>
         <name>StandardValueSet</name>
+    </types>
+    <types>
+        <members>Account.Sub_Segment_is_mandatory</members>
+        <members>Opportunity.Close_Date_Cant_be_Less_than_Today</members>
+        <members>Opportunity.Closed_Lost_Reason</members>
+        <members>Opportunity.Next_Meeting_dat_Cant_be_Less_than_Today</members>
+        <members>Opportunity.On_Hold_Mandatory_fields</members>
+        <members>Opportunity.On_Hold_Mandatory_fields_Next_Step</members>
+        <members>Opportunity.On_Hold_Mandatory_fields_Obstacle_detail</members>
+        <members>Opportunity.On_Hold_Stage_Change</members>
+        <members>Opportunity.On_Hold_close_date</members>
+        <members>Opportunity.On_hold_Next_meeting_date_mandatory</members>
+        <members>Opportunity.On_hold_Reason_mandatory</members>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>Account.GoogleMaps</members>

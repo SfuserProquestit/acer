@@ -163,6 +163,15 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Lost_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Lost Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -171,6 +180,220 @@
         <fullName>NextStep</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Next_Meeting_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Meeting date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Next_Step__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Step</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call back in 1 week</fullName>
+                    <default>false</default>
+                    <label>Call back in 1 week</label>
+                </value>
+                <value>
+                    <fullName>Call back in 2 weeks</fullName>
+                    <default>false</default>
+                    <label>Call back in 2 weeks</label>
+                </value>
+                <value>
+                    <fullName>Call back 1 month</fullName>
+                    <default>false</default>
+                    <label>Call back 1 month</label>
+                </value>
+                <value>
+                    <fullName>Call back in 3 months</fullName>
+                    <default>false</default>
+                    <label>Call back in 3 months</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Appointment</fullName>
+                    <default>false</default>
+                    <label>Appointment</label>
+                </value>
+                <value>
+                    <fullName>No action required</fullName>
+                    <default>false</default>
+                    <label>No action required</label>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Test</label>
+                </value>
+                <value>
+                    <fullName>Test2</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Test2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Obstacle_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Obstacle Detail</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Obstacle__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Organisational change</fullName>
+                    <default>false</default>
+                    <label>Organisational change</label>
+                </value>
+                <value>
+                    <fullName>Budget change</fullName>
+                    <default>false</default>
+                    <label>Budget change</label>
+                </value>
+                <value>
+                    <fullName>Personnel change</fullName>
+                    <default>false</default>
+                    <label>Personnel change</label>
+                </value>
+                <value>
+                    <fullName>Process change</fullName>
+                    <default>false</default>
+                    <label>Process change</label>
+                </value>
+                <value>
+                    <fullName>Evaluation not yet complete</fullName>
+                    <default>false</default>
+                    <label>Evaluation not yet complete</label>
+                </value>
+                <value>
+                    <fullName>Existing customer unhappy with [Product]</fullName>
+                    <default>false</default>
+                    <label>Existing customer is unhappy with [Product]</label>
+                </value>
+                <value>
+                    <fullName>Existing customer is unhappy with [Finance]</fullName>
+                    <default>false</default>
+                    <label>Existing customer is unhappy with [Finance]</label>
+                </value>
+                <value>
+                    <fullName>Existing customer is unhappy with [Service]</fullName>
+                    <default>false</default>
+                    <label>Existing customer is unhappy with [Service]</label>
+                </value>
+                <value>
+                    <fullName>Existing customer is unhappy with [Sales]</fullName>
+                    <default>false</default>
+                    <label>Existing customer is unhappy with [Sales]</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Organisational change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Budget change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Personnel change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Process change</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Evaluation not yet complete</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Existing customer unhappy with [Product]</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Existing customer is unhappy with [Finance]</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Existing customer is unhappy with [Service]</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Customer deferred</controllingFieldValue>
+                <valueName>Existing customer is unhappy with [Sales]</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Obstacle__c</fullName>
+        <externalId>false</externalId>
+        <label>Obstacle</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer deferred</fullName>
+                    <default>false</default>
+                    <label>Customer deferred</label>
+                </value>
+                <value>
+                    <fullName>Stock unavailable</fullName>
+                    <default>false</default>
+                    <label>Stock unavailable</label>
+                </value>
+                <value>
+                    <fullName>Test</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Test</label>
+                </value>
+                <value>
+                    <fullName>Test2</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Test2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>On_hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>On Hold</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -198,6 +421,17 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>On Hold Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>StageName</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -208,6 +442,15 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Target_Ship_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Ship date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>TotalOpportunityQuantity</fullName>
@@ -325,4 +568,78 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Close_Date_Cant_be_Less_than_Today</fullName>
+        <active>true</active>
+        <errorConditionFormula>CloseDate &lt; Today()</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Close Date can not be earlier than Today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closed_Lost_Reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(StageName, &quot;Closed Lost(0%)&quot;) &amp;&amp; ISBLANK( Lost_Reason__c)</errorConditionFormula>
+        <errorDisplayField>Lost_Reason__c</errorDisplayField>
+        <errorMessage>You need to provide a Closed Lost reason</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Next_Meeting_dat_Cant_be_Less_than_Today</fullName>
+        <active>true</active>
+        <errorConditionFormula>Next_Meeting_date__c &lt; Today()</errorConditionFormula>
+        <errorDisplayField>Next_Meeting_date__c</errorDisplayField>
+        <errorMessage>Next Meeting Date can not be earlier than Today</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Mandatory_fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT( Obstacle__c ) )
+&amp;&amp; On_hold__c= True</errorConditionFormula>
+        <errorDisplayField>Obstacle__c</errorDisplayField>
+        <errorMessage>Obstacle value cannot be blank when  &quot;On-Hold&quot; checkbox is marked</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Mandatory_fields_Next_Step</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT(  Next_Step__c ) )
+&amp;&amp; On_hold__c= True</errorConditionFormula>
+        <errorDisplayField>Next_Step__c</errorDisplayField>
+        <errorMessage>Next step value cannot be blanked when  &quot;On-Hold&quot; checkbox is marked</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Mandatory_fields_Obstacle_detail</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Obstacle__c,&quot;Customer deferred&quot; )&amp;&amp; NOT( ISBLANK(TEXT(Obstacle__c) ))&amp;&amp; ISBLANK(TEXT( Obstacle_Detail__c ) )</errorConditionFormula>
+        <errorDisplayField>Obstacle_Detail__c</errorDisplayField>
+        <errorMessage>Please enter Obstacle detail value for selected Obstacle</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Stage_Change</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISCHANGED(StageName) || ISCHANGED( Probability ))
+&amp;&amp; On_hold__c= True</errorConditionFormula>
+        <errorMessage>Stage or Probability can not be changed when Opportunity is marked as On Hold.Please untick the On Hold checkbox to proceed to stage change</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_close_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(On_hold__c) &amp;&amp; On_hold__c = True &amp;&amp; NOT(ISCHANGED(CloseDate)) &amp;&amp; NOT(ISNEW() )</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Please adjust the close date as the opportunity is On Hold</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_hold_Next_meeting_date_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( TEXT(   Next_Meeting_date__c ) ) 
+&amp;&amp; On_hold__c= True</errorConditionFormula>
+        <errorDisplayField>Next_Meeting_date__c</errorDisplayField>
+        <errorMessage>Next Meeting date cannot be blank when  &quot;On-Hold&quot; checkbox is marked</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_hold_Reason_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( Reason__c  ) 
+&amp;&amp; On_hold__c= True</errorConditionFormula>
+        <errorDisplayField>Reason__c</errorDisplayField>
+        <errorMessage>On Hold reason cannot be blank when &quot;On-Hold&quot; checkbox is marked</errorMessage>
+    </validationRules>
 </CustomObject>

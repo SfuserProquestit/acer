@@ -45,11 +45,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>List</actionName>
+        <actionName>ListClean</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ListClean</actionName>
+        <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -77,11 +77,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>View</actionName>
+        <actionName>ViewCustomerPortal</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ViewCustomerPortal</actionName>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -93,6 +93,19 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>QuickStartLayout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>Email</fields>
+        <fields>MobilePhone</fields>
+        <fields>Is_Decision_Maker__c</fields>
+        <fields>Main_Contact__c</fields>
+        <fields>MailingAddress</fields>
+        <label>Contact salesforce App Layout</label>
+    </compactLayouts>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
@@ -146,6 +159,30 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Is_Decision_Maker__c</fullName>
+        <externalId>false</externalId>
+        <label>Is Decision Maker</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>Jigsaw</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -163,6 +200,14 @@
     <fields>
         <fullName>MailingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Main_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Main Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>MobilePhone</fullName>
@@ -209,6 +254,18 @@
         <columns>CORE.USERS.LAST_NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Contacts_alongwith_Main_Contact</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>Main_Contact__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>List All contacts</label>
     </listViews>
     <listViews>
         <fullName>MyContacts</fullName>

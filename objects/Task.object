@@ -33,6 +33,14 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>BDM_compact_layout</fullName>
+        <fields>Subject</fields>
+        <fields>Status</fields>
+        <fields>ActivityDate</fields>
+        <fields>Priority</fields>
+        <label>BDM compact layout</label>
+    </compactLayouts>
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>

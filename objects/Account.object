@@ -25,11 +25,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>List</actionName>
+        <actionName>ListClean</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ListClean</actionName>
+        <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -53,11 +53,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>View</actionName>
+        <actionName>ViewCustomerPortalUser</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ViewCustomerPortalUser</actionName>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -99,6 +99,15 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Fax</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -124,6 +133,17 @@
     <fields>
         <fullName>Name</fullName>
         <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>No_Of_Seats__c</fullName>
+        <externalId>false</externalId>
+        <label>No Of Seats</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>NumberOfEmployees</fullName>
@@ -171,6 +191,59 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Sub_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>TAFE</fullName>
+                    <default>false</default>
+                    <label>TAFE</label>
+                </value>
+                <value>
+                    <fullName>University</fullName>
+                    <default>false</default>
+                    <label>University</label>
+                </value>
+                <value>
+                    <fullName>K-12 Public</fullName>
+                    <default>false</default>
+                    <label>K-12 Public</label>
+                </value>
+                <value>
+                    <fullName>K-12 Independent</fullName>
+                    <default>false</default>
+                    <label>K-12 Independent</label>
+                </value>
+                <value>
+                    <fullName>K-12 Catholic</fullName>
+                    <default>false</default>
+                    <label>K-12 Catholic</label>
+                </value>
+                <value>
+                    <fullName>Federal</fullName>
+                    <default>false</default>
+                    <label>Federal</label>
+                </value>
+                <value>
+                    <fullName>State</fullName>
+                    <default>false</default>
+                    <label>State</label>
+                </value>
+                <value>
+                    <fullName>Local</fullName>
+                    <default>false</default>
+                    <label>Local</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>TickerSymbol</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -191,7 +264,7 @@
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <label>All Sub Accounts</label>
+        <label>All Accounts</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -209,6 +282,13 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Sub_Segment_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Industry,&quot;Education&quot;)&amp;&amp; ISBLANK(TEXT(Sub_Segment__c))</errorConditionFormula>
+        <errorDisplayField>Sub_Segment__c</errorDisplayField>
+        <errorMessage>Please enter Sub Segment value</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>GoogleMaps</fullName>
         <availability>online</availability>
