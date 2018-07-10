@@ -21,10 +21,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CampaignId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>On_hold__c</field>
             </layoutItems>
             <layoutItems>
@@ -66,8 +62,8 @@
                 <field>Probability</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Amount</field>
+                <behavior>Required</behavior>
+                <field>Description</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -78,8 +74,8 @@
                 <field>Lost_Reason__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Description</field>
+                <behavior>Edit</behavior>
+                <field>Amount</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

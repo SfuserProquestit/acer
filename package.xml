@@ -92,6 +92,7 @@
         <members>Account.Website</members>
         <members>AccountContactRole.Role</members>
         <members>Activity.Account__c</members>
+        <members>Activity.Next_Step__c</members>
         <members>Activity.Opportunity__c</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
@@ -806,10 +807,12 @@
     </types>
     <types>
         <members>Create_Followup_task_for_BDM-7</members>
+        <members>Opportunity_On_Hold_follow_Up_Task-24</members>
         <name>Flow</name>
     </types>
     <types>
         <members>Create_Followup_task_for_BDM</members>
+        <members>Opportunity_On_Hold_follow_Up_Task</members>
         <name>FlowDefinition</name>
     </types>
     <types>
@@ -1229,6 +1232,7 @@
     </types>
     <types>
         <members>Account.Sub_Segment_is_mandatory</members>
+        <members>Contact.First_Name_Mandatory</members>
         <members>Opportunity.Close_Date_Cant_be_Less_than_Today</members>
         <members>Opportunity.Closed_Lost_Reason</members>
         <members>Opportunity.Next_Meeting_dat_Cant_be_Less_than_Today</members>

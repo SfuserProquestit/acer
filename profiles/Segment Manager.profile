@@ -25,6 +25,11 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.MFG_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.No_Of_Seats__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -41,6 +46,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Event.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Next_Step__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -106,6 +116,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Next_Step__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

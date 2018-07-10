@@ -184,7 +184,7 @@
     <fields>
         <fullName>Next_Meeting_date__c</fullName>
         <externalId>false</externalId>
-        <label>Next Meeting date</label>
+        <label>Next Follow-up date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
@@ -193,7 +193,7 @@
     <fields>
         <fullName>Next_Step__c</fullName>
         <externalId>false</externalId>
-        <label>Next Step</label>
+        <label>Next Steps</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
