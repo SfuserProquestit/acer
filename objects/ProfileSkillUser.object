@@ -21,15 +21,15 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>NewProfileSkill</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>NewProfileSkillBySkill</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>NewProfileSkillByUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewProfileSkill</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>

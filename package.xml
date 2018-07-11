@@ -68,12 +68,31 @@
         <members>Account.AccountSource</members>
         <members>Account.AnnualRevenue</members>
         <members>Account.BillingAddress</members>
+        <members>Account.BillingCity</members>
+        <members>Account.BillingCountry</members>
+        <members>Account.BillingGeocodeAccuracy</members>
+        <members>Account.BillingLatitude</members>
+        <members>Account.BillingLongitude</members>
+        <members>Account.BillingPostalCode</members>
+        <members>Account.BillingState</members>
+        <members>Account.BillingStreet</members>
+        <members>Account.CreatedById</members>
+        <members>Account.CreatedDate</members>
         <members>Account.Description</members>
         <members>Account.Email__c</members>
         <members>Account.Fax</members>
+        <members>Account.Id</members>
         <members>Account.Industry</members>
+        <members>Account.IsDeleted</members>
         <members>Account.Jigsaw</members>
+        <members>Account.JigsawCompanyId</members>
+        <members>Account.LastActivityDate</members>
+        <members>Account.LastModifiedById</members>
+        <members>Account.LastModifiedDate</members>
+        <members>Account.LastReferencedDate</members>
+        <members>Account.LastViewedDate</members>
         <members>Account.MFG_ID__c</members>
+        <members>Account.MasterRecordId</members>
         <members>Account.Name</members>
         <members>Account.No_Of_Seats__c</members>
         <members>Account.NumberOfEmployees</members>
@@ -81,12 +100,22 @@
         <members>Account.Ownership</members>
         <members>Account.ParentId</members>
         <members>Account.Phone</members>
+        <members>Account.PhotoUrl</members>
         <members>Account.Rating</members>
         <members>Account.ShippingAddress</members>
+        <members>Account.ShippingCity</members>
+        <members>Account.ShippingCountry</members>
+        <members>Account.ShippingGeocodeAccuracy</members>
+        <members>Account.ShippingLatitude</members>
+        <members>Account.ShippingLongitude</members>
+        <members>Account.ShippingPostalCode</members>
+        <members>Account.ShippingState</members>
+        <members>Account.ShippingStreet</members>
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
         <members>Account.Site</members>
         <members>Account.Sub_Segment__c</members>
+        <members>Account.SystemModstamp</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Type</members>
         <members>Account.Website</members>
@@ -214,28 +243,57 @@
         <members>Contact.AssistantName</members>
         <members>Contact.AssistantPhone</members>
         <members>Contact.Birthdate</members>
+        <members>Contact.CreatedById</members>
+        <members>Contact.CreatedDate</members>
         <members>Contact.Department</members>
         <members>Contact.Description</members>
         <members>Contact.DoNotCall</members>
         <members>Contact.Email</members>
+        <members>Contact.EmailBouncedDate</members>
+        <members>Contact.EmailBouncedReason</members>
         <members>Contact.Fax</members>
+        <members>Contact.FirstName</members>
         <members>Contact.HasOptedOutOfEmail</members>
         <members>Contact.HasOptedOutOfFax</members>
         <members>Contact.HomePhone</members>
+        <members>Contact.Id</members>
+        <members>Contact.IsDeleted</members>
+        <members>Contact.IsEmailBounced</members>
         <members>Contact.Is_Decision_Maker__c</members>
         <members>Contact.Jigsaw</members>
+        <members>Contact.JigsawContactId</members>
+        <members>Contact.LastActivityDate</members>
         <members>Contact.LastCURequestDate</members>
         <members>Contact.LastCUUpdateDate</members>
+        <members>Contact.LastModifiedById</members>
+        <members>Contact.LastModifiedDate</members>
+        <members>Contact.LastName</members>
+        <members>Contact.LastReferencedDate</members>
+        <members>Contact.LastViewedDate</members>
         <members>Contact.LeadSource</members>
         <members>Contact.MailingAddress</members>
+        <members>Contact.MailingCity</members>
+        <members>Contact.MailingCountry</members>
+        <members>Contact.MailingGeocodeAccuracy</members>
+        <members>Contact.MailingLatitude</members>
+        <members>Contact.MailingLongitude</members>
+        <members>Contact.MailingPostalCode</members>
+        <members>Contact.MailingState</members>
+        <members>Contact.MailingStreet</members>
         <members>Contact.Main_Contact__c</members>
+        <members>Contact.MasterRecordId</members>
+        <members>Contact.MiddleName</members>
         <members>Contact.MobilePhone</members>
         <members>Contact.Name</members>
         <members>Contact.OtherAddress</members>
         <members>Contact.OtherPhone</members>
         <members>Contact.OwnerId</members>
         <members>Contact.Phone</members>
+        <members>Contact.PhotoUrl</members>
         <members>Contact.ReportsToId</members>
+        <members>Contact.Salutation</members>
+        <members>Contact.Suffix</members>
+        <members>Contact.SystemModstamp</members>
         <members>Contact.Title</members>
         <members>ContentVersion.ContentSize</members>
         <members>ContentVersion.Description</members>
@@ -355,11 +413,30 @@
         <members>Opportunity.CampaignId</members>
         <members>Opportunity.CloseDate</members>
         <members>Opportunity.ContractId</members>
+        <members>Opportunity.CreatedById</members>
+        <members>Opportunity.CreatedDate</members>
         <members>Opportunity.Description</members>
         <members>Opportunity.Discovery_Completed__c</members>
         <members>Opportunity.ExpectedRevenue</members>
+        <members>Opportunity.Fiscal</members>
+        <members>Opportunity.FiscalQuarter</members>
+        <members>Opportunity.FiscalYear</members>
+        <members>Opportunity.ForecastCategory</members>
+        <members>Opportunity.ForecastCategoryName</members>
+        <members>Opportunity.HasOpenActivity</members>
+        <members>Opportunity.HasOpportunityLineItem</members>
+        <members>Opportunity.HasOverdueTask</members>
+        <members>Opportunity.Id</members>
         <members>Opportunity.IqScore</members>
+        <members>Opportunity.IsClosed</members>
+        <members>Opportunity.IsDeleted</members>
         <members>Opportunity.IsPrivate</members>
+        <members>Opportunity.IsWon</members>
+        <members>Opportunity.LastActivityDate</members>
+        <members>Opportunity.LastModifiedById</members>
+        <members>Opportunity.LastModifiedDate</members>
+        <members>Opportunity.LastReferencedDate</members>
+        <members>Opportunity.LastViewedDate</members>
         <members>Opportunity.LeadSource</members>
         <members>Opportunity.Loss_Reason__c</members>
         <members>Opportunity.Lost_Reason__c</members>
@@ -377,6 +454,7 @@
         <members>Opportunity.Reason__c</members>
         <members>Opportunity.StageName</members>
         <members>Opportunity.SyncedQuoteId</members>
+        <members>Opportunity.SystemModstamp</members>
         <members>Opportunity.Target_Ship_date__c</members>
         <members>Opportunity.TotalOpportunityQuantity</members>
         <members>Opportunity.Type</members>
