@@ -885,7 +885,9 @@
     </types>
     <types>
         <members>Create_Followup_task_for_BDM-7</members>
+        <members>Create_Followup_task_for_BDM-8</members>
         <members>Opportunity_On_Hold_follow_Up_Task-24</members>
+        <members>Opportunity_On_Hold_follow_Up_Task-26</members>
         <name>Flow</name>
     </types>
     <types>
