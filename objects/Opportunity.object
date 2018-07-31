@@ -75,6 +75,7 @@
     <fields>
         <fullName>Budget_Confirmed__c</fullName>
         <defaultValue>false</defaultValue>
+        <description>Budget Confirmed</description>
         <externalId>false</externalId>
         <label>Budget Confirmed</label>
         <trackFeedHistory>false</trackFeedHistory>
